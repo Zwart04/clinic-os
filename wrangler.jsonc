@@ -1,0 +1,26 @@
+{
+  "name": "zwart04-clinic-os",
+  "compatibility_date": "2026-10-03",
+  "workers_dev": true,
+  "routes": [
+    {
+      "pattern": "clinic-os-app.zwart.qzz.io",
+      "custom_domain": true
+    }
+  ],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "main": ".open-next/worker.js",
+  "compatibility_flags": [
+    "nodejs_compat",
+    "global_fetch_strictly_public"
+  ],
+  "services": [
+    {
+      "binding": "WORKER_SELF_REFERENCE",
+      "service": "zwart04-clinic-os"
+    }
+  ]
+}
