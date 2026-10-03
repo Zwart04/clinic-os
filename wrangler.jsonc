@@ -1,26 +1,29 @@
 {
   "name": "zwart04-clinic-os",
+  "account_id": "06403b9ad7c7c150d97e34aad884419d",
+  "main": "platform/proxy.js",
   "compatibility_date": "2026-10-03",
   "workers_dev": true,
+  "vars": {
+    "PRODUCT": "clinic-os",
+    "CANONICAL_HOST": "clinic-os-app.zwart.qzz.io"
+  },
+  "services": [
+    {
+      "binding": "BACKEND",
+      "service": "zwart04-platform-v2"
+    }
+  ],
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": true
+  },
   "routes": [
     {
       "pattern": "clinic-os-app.zwart.qzz.io",
       "custom_domain": true
-    }
-  ],
-  "assets": {
-    "directory": ".open-next/assets",
-    "binding": "ASSETS"
-  },
-  "main": ".open-next/worker.js",
-  "compatibility_flags": [
-    "nodejs_compat",
-    "global_fetch_strictly_public"
-  ],
-  "services": [
-    {
-      "binding": "WORKER_SELF_REFERENCE",
-      "service": "zwart04-clinic-os"
     }
   ]
 }

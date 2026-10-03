@@ -1,38 +1,9 @@
 {
-  "name": "clinic-os",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "npm run typecheck",
-    "typecheck": "tsc --noEmit",
-    "build:cloudflare": "opennextjs-cloudflare build",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy"
-  },
-  "dependencies": {
-    "class-variance-authority": "^0.7.0",
-    "clsx": "^2.1.1",
-    "jspdf": "^2.5.2",
-    "jspdf-autotable": "^3.8.4",
-    "lucide-react": "^0.460.0",
-    "next": "16.3.8",
-    "react": "19.0.0-rc-66855b96-20241106",
-    "react-dom": "19.0.0-rc-66855b96-20241106",
-    "recharts": "^2.13.3",
-    "tailwind-merge": "^2.5.4",
-    "xlsx": "^0.18.5"
-  },
-  "devDependencies": {
-    "@types/node": "^22.9.0",
-    "@types/react": "^19.0.0",
-    "@types/react-dom": "^19.0.0",
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.49",
-    "tailwindcss": "^3.4.14",
-    "typescript": "^5.6.3",
-    "@opennextjs/cloudflare": "1.20.8",
-    "wrangler": "4.147.0"
-  }
+ "name":"zwart04-unified-rebuild",
+ "version":"2.0.0",
+ "private":true,
+ "type":"module",
+ "scripts":{"test":"node --test tests/*.test.js","build":"vite build","dev":"vite --host 127.0.0.1"},
+ "dependencies":{"react":"19.3.0","react-dom":"19.3.0","lucide-react":"^0.577.0","jszip":"^3.10.1"},
+ "devDependencies":{"vite":"^8.0.0","@vitejs/plugin-react":"^6.0.0","wrangler":"4.147.0"}
 }
